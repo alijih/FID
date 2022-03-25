@@ -1,0 +1,8 @@
+.abierta{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-wrap: wrap;
+        
+    background-color: rgb(255, 255, 255);}
+.abierta img{ width: 50%; height: 50%;}

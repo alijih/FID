@@ -1,0 +1,22 @@
+
+<div class="all">
+    <ul id="hexGrid" class="panal1">
+        <li class="hex" *ngFor="let noticia of noticias">
+            <div class="hexIn">
+                <!-- <a class="hexLink" href="#noti{{noticia.id}}"> -->
+                <a class="hexLink" (click)="new_opened.mostrar_new_opened($event);this.mostrar_new_opened()" id="{{noticia.id}}">
+                    <img src="{{noticia.imagen}}" alt="" id="{{noticia.id}}" />
+                    <h1 id="{{noticia.id}}">{{noticia.titulo}}</h1>
+                    <p id="{{noticia.id}}">{{noticia.descripcion}}</p>
+                </a>
+            </div>
+        </li>    
+    </ul>
+    <div class="noti-abierta">
+        <app-new-opened #new_opened></app-new-opened>
+        <a (click)="ocultar_new_opened()">Cerrar</a>
+    </div>
+</div>
+<div class="barra_progreso_scroll">
+
+</div>
